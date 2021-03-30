@@ -1,0 +1,12 @@
+﻿@model MyWebProjection.Models.Personal
+@{
+    ViewBag.Title = "Search";
+}
+
+<form asp-controller="Home" asp-action="GetResult" method="get">
+    <p>
+        ID: <input type="number" name="id"/>
+        <input type="submit" value="Filter" />
+    </p>
+
+</form>

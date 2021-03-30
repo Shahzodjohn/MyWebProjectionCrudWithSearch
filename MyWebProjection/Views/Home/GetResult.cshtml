@@ -1,0 +1,25 @@
+﻿@model MyWebProjection.Models.Personal
+@{
+    ViewBag.Title = "Result";
+}
+<div>
+    <form asp-controller="Home" asp-action="GetResult">
+        <div class="table table-bordered">
+            <a>Id</a>
+            <a>FirstName</a>
+            <a>LastName</a>
+            <a>MiddleName</a>
+        </div>
+        <div>
+   
+            
+                <a>@Model.Id</a>
+                <a>@Model.FirstName</a>
+                <a>@Model.LastName</a>
+                <a>@Model.MiddleName</a>
+
+            
+        </div>
+    </form>
+</div>
+

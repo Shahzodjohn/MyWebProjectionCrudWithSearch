@@ -1,0 +1,21 @@
+﻿@model MyWebProjection.Models.Personal
+@{
+    ViewBag.Title = Model.FirstName;
+}
+<h2>User @Model.FirstName</h2>
+<div>
+    <dl class="d-lg-table">
+        <dt>Identificator</dt>
+        <dd>@Model.Id</dd>
+    </dl>
+
+    <dl class="d-lg-table">
+        <dt>LastName</dt>
+        <dd>@Model.LastName</dd>
+    </dl>
+
+    <dl class="d-lg-table">
+        <dt>ModdleName</dt>
+        <dd>@Model.MiddleName</dd>
+    </dl>
+</div>
